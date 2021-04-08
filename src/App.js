@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          allting är 42
+          allting är 42 eller 43
         </p>
         <a
           className="App-link"
