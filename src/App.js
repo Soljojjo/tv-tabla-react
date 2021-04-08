@@ -9,7 +9,7 @@ function App() {
         <Sidebar />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          allting är 42 eller 43
         </p>
         <a
           className="App-link"
