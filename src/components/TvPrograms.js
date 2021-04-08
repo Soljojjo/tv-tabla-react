@@ -18,23 +18,17 @@ const TvPrograms = () => {
     // Can only return one object, encapsulated in a DIV here
     return (
         < div >
-        <h1 class="channel-title">
-            SVT 1
-            </h1>
-                <ul class="program-list">
-                <li class="program-list__item">
-                13:00<br/>
-                    Vinterstudion
-                </li>
-                <li class="program-list__item">
-                13:30<br/>
-                    Alpint: VM
-                </li>
-                <li class="program-list__item">
-                14:30<br/>
-                    Vinterstudion
-                </li>
+            <h1 className="channel-title">SVT 1</h1>
+            <ul className="program-list">
+                {programs.map((program) => (
+                    <li className="program-list__item">
+                        {program.start}
+                        <br />
+                        {program.name}
+                    </li>
+                ))}
             </ul>
-    </div >
-    )
-}
+        </div >
+    );
+};
+export default TvPrograms;

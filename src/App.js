@@ -6,8 +6,21 @@ import TvPrograms from './components/TvPrograms';
 function App() {
   return (
     <div className="App">
+
+      <TvPrograms />
+    </div>
+  );
+}
+
+export default App;
+/* Old stuff:
+// <Sidebar />   not added currently
+
+function App() {
+  return (
+    <div className="App">
       <header className="App-header">
-        <Sidebar />
+      <Sidebar />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           allting är 42 eller 43
@@ -24,5 +37,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+*/
