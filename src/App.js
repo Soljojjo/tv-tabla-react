@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import TvPrograms from './components/TvPrograms';
-import styles from './components/styles';
 
 function App() {
   return (
