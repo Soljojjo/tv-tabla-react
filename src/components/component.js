@@ -1,5 +1,6 @@
 import React from 'react';
 
+ // Can only return one object, encapsulated in a DIV herer
 const component = () => {
     <div>
         <h1 class="channel-title">
@@ -20,5 +21,4 @@ const component = () => {
                 </li>
             </ul>
     </div>
-
 }
