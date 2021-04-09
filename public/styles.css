@@ -28,6 +28,7 @@ body {
 
 .program-list{
     background-color: white;
+    text-align: left;
     list-style-type: none;
     padding: 0;
 }
@@ -35,4 +36,7 @@ body {
 .program-list__item{
     border-top:1px solid lightgray;
     padding: 10px;
+}
+.program-list__time{
+    font-weight: bold;
 }
