@@ -25,11 +25,12 @@ const TvPrograms = () => {
                 <div><h1 className="channel-title">SVT 1</h1>
                     <ul className="program-list">
                         {programs.map((program) => (
-                            <li className="program-list__item">
-                                {moment(program.start).format("HH:mm")}
-                                <br />
-                                {program.name}
-                            </li>
+                           <li className="program-list__item">
+                           <div className="program-list__time">
+                               {moment(program.start).format("HH:mm")}
+                           </div>
+                           { program.name}
+                       </li>
                         ))}
                     </ul>
                 </div>
