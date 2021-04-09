@@ -32,7 +32,7 @@ body {
     padding: 0;
 }
 
-.program-list_item{
+.program-list__item{
     border-top:1px solid lightgray;
     padding: 10px;
 }
