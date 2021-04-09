@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
-
+import moment from 'moment';
 
 const TvPrograms = () => {
     const [programs, setPrograms] = useState([]);
@@ -26,7 +26,7 @@ const TvPrograms = () => {
                     <ul className="program-list">
                         {programs.map((program) => (
                             <li className="program-list__item">
-                                {program.start}
+                                {moment(program.start).format("HH:mm")}
                                 <br />
                                 {program.name}
                             </li>
