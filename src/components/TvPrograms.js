@@ -20,10 +20,9 @@ const TvPrograms = () => {
     return (
         < div >
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
-                <div>Column 1 < Sidebar />  </div>
+                <div> <Sidebar /> </div>
 
-
-                <div>Column 2<h1 className="channel-title">SVT 1</h1>
+                <div><h1 className="channel-title">SVT 1</h1>
                     <ul className="program-list">
                         {programs.map((program) => (
                             <li className="program-list__item">
@@ -32,12 +31,11 @@ const TvPrograms = () => {
                                 {program.name}
                             </li>
                         ))}
-                    </ul></div>
+                    </ul>
+                </div>
 
-                <div>Column 3</div>
+                <div></div>
             </div>
-
-
         </div >
     );
 };
