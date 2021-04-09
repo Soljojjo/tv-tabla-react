@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Sidebar from './Sidebar';
 
 
 const TvPrograms = () => {
@@ -18,17 +19,28 @@ const TvPrograms = () => {
     // Can only return one object, encapsulated in a DIV here
     return (
         < div >
-            <h1 className="channel-title">SVT 1</h1>
-            <ul className="program-list">
-                {programs.map((program) => (
-                    <li className="program-list__item">
-                        {program.start}
-                        <br />
-                        {program.name}
-                    </li>
-                ))}
-            </ul>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
+                <div>Column 1 < Sidebar />  </div>
+
+
+                <div>Column 2<h1 className="channel-title">SVT 1</h1>
+                    <ul className="program-list">
+                        {programs.map((program) => (
+                            <li className="program-list__item">
+                                {program.start}
+                                <br />
+                                {program.name}
+                            </li>
+                        ))}
+                    </ul></div>
+
+                <div>Column 3</div>
+            </div>
+
+
         </div >
     );
 };
 export default TvPrograms;
+
+
