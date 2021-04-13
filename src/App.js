@@ -1,5 +1,6 @@
+
+
 import './App.css';
-import Sidebar from './components/Sidebar';
 import TvPrograms from './components/TvPrograms';
 
 function App() {
@@ -9,8 +10,14 @@ function App() {
 
       <TvPrograms />
       
+
+
     </div>
     </>
   );
-};
+}
+
+
+
+
 export default App;
